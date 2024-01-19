@@ -10,7 +10,7 @@ export function MovieCard(props) {
     return (
         <div className={styles.card}>
             <a href={url}>
-                <img src={movie.Poster} />
+                <img src={movie.Poster} alt={movie.Title} />
             </a>
         </div>
     );

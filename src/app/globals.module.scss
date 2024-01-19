@@ -2,7 +2,7 @@
 body {
   height: 100%;
   color: #1a1a1a;
-  background: hsla(141, 54%, 86%, 1);
+  background: rgb(1, 7, 3);
 
   background: linear-gradient(
     to right,
@@ -57,7 +57,6 @@ body {
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   width: 100%;
-  max-width: 1200px;
   padding: 0 20px;
   margin-left: 110px;
   box-sizing: border-box;

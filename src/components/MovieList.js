@@ -2,6 +2,8 @@
 
 import { MovieCard } from "./MovieCard";
 
+import styles from '../app/page.module.scss'
+
 
 export function MovieList(props) {
 
@@ -15,8 +17,8 @@ export function MovieList(props) {
     })
 
     return (
-        <section className="parent-container">
-            <section className="card-container">
+        <section className={styles.parentcontainer}>
+            <section className={styles.cardcontainer}>
                 {display}
             </section>
         </section>

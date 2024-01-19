@@ -2,7 +2,6 @@
 
 import styles from './page.module.scss'
 import { useEffect, useState } from 'react'
-import { useRouter } from 'next/router';
 import { MovieList } from '../components/MovieList';
 
 export default function Home() {

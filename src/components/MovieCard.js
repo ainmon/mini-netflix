@@ -1,4 +1,5 @@
 'use client'
+import styles from '../app/page.module.scss'
 
 export function MovieCard(props) {
 
@@ -7,7 +8,7 @@ export function MovieCard(props) {
     let url = props.url
 
     return (
-        <div className="card">
+        <div className={styles.card}>
             <a href={url}>
                 <img src={movie.Poster} />
             </a>

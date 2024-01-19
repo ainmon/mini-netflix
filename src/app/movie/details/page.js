@@ -3,6 +3,7 @@
 import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { MovieInfo } from '../../../components/MovieInfo';
+import 'ldrs/ring';
 
 export default function MovieDetails() {
 
@@ -22,7 +23,7 @@ export default function MovieDetails() {
     return (
         <main className="movie-page">
             <h1>Movie Details</h1>
-            {movie ? <MovieInfo movie={movie}/> : null}
+            {movie ? <MovieInfo movie={movie}/> : <l-ring size="40" stroke="5" bg-opacity="0" speed="2" color="black" ></l-ring>}
         </main>
     )
 }

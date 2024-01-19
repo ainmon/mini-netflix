@@ -7,4 +7,16 @@
   min-height: 100vh;
 }
 
+.header {
+  color: white;
+  margin-bottom: 4rem;
+  font-size: 150px;
+	color: #fff;
+	font-family: 'Oleo Script', system-ui;
+	text-align: center;
+
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(90deg, #f80404 0%, #fff8f8 100%);
+    -webkit-background-clip: text;
+}
 

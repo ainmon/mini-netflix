@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
     
-      <header>Mini Netflix</header>
+      <header className={styles.header}>Mini Netflix</header>
 
 
       {movieArr ? <MovieList movies={movieArr} /> : null}

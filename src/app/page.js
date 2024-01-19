@@ -1,8 +1,9 @@
 'use client';
 
 import styles from './page.module.scss'
-import { MovieList } from '@/components/MovieList'
 import { useEffect, useState } from 'react'
+import { useRouter } from 'next/router';
+import { MovieList } from '../components/MovieList';
 
 export default function Home() {
 
@@ -12,7 +13,6 @@ export default function Home() {
     fetch('https://www.omdbapi.com/?apikey=dc363b84&s=Bat')
     .then((res) =>res.json())
     .then((data => setMovieArr(data)))
-
   }, []);
 
 
@@ -20,6 +20,7 @@ export default function Home() {
     <main className={styles.main}>
     
       <header>Mini Netflix</header>
+
 
       {movieArr ? <MovieList movies={movieArr} /> : null}
     </main>

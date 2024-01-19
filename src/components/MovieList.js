@@ -1,8 +1,6 @@
 'use client'
 
-import { useEffect } from "react"
 import { MovieCard } from "./MovieCard";
-
 
 
 export function MovieList(props) {
@@ -11,16 +9,16 @@ export function MovieList(props) {
 
     let display = [];
 
-    movieArr.forEach((movie, index) => {
-        display.push(<MovieCard key={index} movie={movie} />)
+    movieArr.map((movie, index) => {
+        const generateUrl = index % 2 === 0 ? '/movie/details?movieId=' + movie.imdbID : '/movie/details/' + movie.Title;
+        display.push(<MovieCard key={index} movie={movie} url={generateUrl} />)
     })
 
     return (
-        <div>
-            <h1>Movies</h1>
-            <div className="card-container">
+        <section className="parent-container">
+            <section className="card-container">
                 {display}
-            </div>
-        </div>
+            </section>
+        </section>
     )
 }

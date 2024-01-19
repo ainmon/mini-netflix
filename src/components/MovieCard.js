@@ -1,15 +1,17 @@
-
+'use client'
 
 export function MovieCard(props) {
 
     let movie = props.movie;
 
-    console.log(movie.Title)
+    let url = props.url
 
     return (
         <div className="card">
-            <h1>{movie.Title}</h1>
+            <a href={url}>
+                <img src={movie.Poster} />
+            </a>
         </div>
     );
     
-}
+}           
